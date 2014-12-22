@@ -1,0 +1,1017 @@
+@CHARSET "UTF-8";
+
+ol,ul,li {
+	list-style: none outside none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#tallyType {
+	margin: 0px auto 10px;
+	width: 1008px;
+	height: 162px;
+	background: url('../image/tally/type_bg.gif') repeat-x scroll center
+		bottom transparent;
+}
+
+#type-l,#type-r,#type-m {
+	float: left;
+	height: 162px;
+}
+
+#type-l {
+	width: 6px;
+	background: url('../image/tally/type.gif') no-repeat scroll left bottom
+		transparent;
+}
+
+#type-m {
+	width: 996px;
+}
+
+#type-r {
+	width: 6px;
+	background: url('../image/tally/type.gif') no-repeat scroll -7px bottom
+		transparent;
+}
+
+#type-menu {
+	height: 32px;
+	color: #FFF;
+}
+
+#type-menu li {
+	float: left;
+}
+
+.tm-l-no {
+	background: none repeat scroll 0% 0% transparent !important;
+}
+
+.tm-l {
+	width: 2px;
+	height: 30px;
+	margin-top: 2px;
+	background: url('../image/tally/type_line.gif') repeat scroll -20px 0px
+		#1D6D62;
+}
+
+.tm-n a {
+	display: block;
+	cursor: pointer;
+	height: 32px;
+	background: url('../image/tally/type_btn.png') no-repeat scroll 0px 0px
+		transparent;
+}
+
+#tm-1 a.select {
+	background-position: 0px -66px !important;
+}
+
+#tm-1 a {
+	width: 142px;
+	margin-left: 20px;
+}
+
+#tm-5 a.select {
+	background-position: -143px -66px !important;
+}
+
+#tm-5 a {
+	width: 142px;
+	background-position: -143px 0px;
+}
+
+#tb-l,#tb-m,#tb-r {
+	float: left;
+}
+
+#tb-l {
+	width: 160px;
+}
+
+img {
+	border: 0px none;
+}
+
+.img-box {
+	width: 130px;
+	height: 100px;
+	padding: 3px 6px;
+	margin: 11px 0px 0px 20px;
+	position: relative;
+	background: url('../image/tally/type_img_box.png') repeat scroll 0% 0%
+		transparent;
+}
+
+.img-box .img-panel {
+	position: absolute;
+	bottom: 9px;
+	left: 6px;
+	height: 28px;
+	width: 130px;
+	color: #FFF;
+	background: none repeat scroll 0% 0% #95A9A5;
+}
+
+.img-box .img-upload {
+	margin: 7px 8px 0px 17px;
+}
+
+.img-box .img-upload-center {
+	margin-left: 40px;
+}
+
+.img-upload {
+	display: inline;
+	float: left;
+	height: 16px;
+	width: 30px;
+	padding-left: 16px;
+	cursor: pointer;
+	background: url('../image/tally/img_icon.png') no-repeat scroll 0px 2px
+		transparent;
+}
+
+#upImagePanel {
+	display: none;
+	float: left;
+}
+
+#imagefile {
+	margin-left: 100px;
+	margin-top: 10px;
+}
+
+#fileMsg {
+	height: 15px;
+	text-align: center;
+	padding-top: 10px;
+	color: red;
+	font-size: 14px;
+	color: red;
+	text-align: center;
+}
+
+.imagefileSubmit {
+	margin-left: 120px;
+	cursor: pointer;
+	margin-top: 20px;
+	border: medium none;
+	width: 103px;
+	height: 37px;
+	margin-bottom: 10px;
+	background: url('../image/tally/popup_btn.gif') repeat scroll 0% 0%
+		transparent;
+	margin-top: 20px;
+}
+
+#tb-m {
+	width: 640px;
+	margin-top: 15px;
+}
+
+#tb-m .tb-ul {
+	clear: both;
+	height: 30px;
+}
+
+#tb-m .tb-ul-1 {
+	margin-bottom: 6px;
+}
+
+#tb-m .tb-li {
+	float: left;
+}
+
+#tb-m label {
+	float: left;
+	vertical-align: middle;
+	text-align: right;
+	line-height: 24px;
+	width: 78px;
+}
+
+#tb-m a {
+	display: block;
+	cursor: pointer;
+	width: 22px;
+	height: 24px;
+	float: left;
+	background: url('../image/tally/type_input.gif') no-repeat scroll 0px
+		-25px transparent;
+	width: 22px;
+}
+
+.choceSelect {
+	height: 24px;
+	width: 105px;
+}
+
+#tb-m .tb-ul-2 {
+	margin-bottom: 6px;
+}
+
+#tb-m .input {
+	width: 127px;
+	height: 19px;
+	padding: 5px 0px 0px 2px !important;
+	margin: 0px !important;
+	float: left;
+	border: medium none;
+	background: url('../image/tally/type_input.gif') no-repeat scroll right
+		-75px transparent;
+}
+
+#tb-m .tb-li {
+	float: left;
+}
+
+#tb-m #tb-memo {
+	width: 366px;
+	margin-left: 42px !important;
+	background-image: none;
+	border: 1px solid #DADADA;
+	background-color: #DCE0DF;
+	height: 17px;
+}
+
+#tb-m .input {
+	width: 127px;
+	height: 19px;
+	padding: 5px 0px 0px 2px !important;
+	margin: 0px !important;
+	float: left;
+	border: medium none;
+	background: url('../image/tally/type_input.gif') no-repeat scroll right
+		-75px transparent;
+}
+
+#tb-r .tb-ul {
+	margin-top: 15px;
+	height: 30px;
+}
+
+#tb-r .tb-ul label {
+	float: left;
+	vertical-align: middle;
+	text-align: right;
+	line-height: 24px;
+	width: 54px;
+}
+
+#tb-r .tb-ul a {
+	display: block;
+	width: 22px;
+	height: 24px;
+	float: left;
+	background: url('../image/tally/type_input.gif') no-repeat scroll 0px
+		-25px transparent;
+}
+
+#tb-r .money {
+	width: 127px;
+	height: 19px;
+	padding: 5px 0px 0px 2px !important;
+	margin: 0px !important;
+	float: left;
+	border: medium none;
+	background: url('../image/tally/type_input.gif') no-repeat scroll right
+		-75px transparent;
+}
+
+#tb-save {
+	display: block;
+	float: left;
+	border: medium none;
+	width: 116px;
+	height: 35px;
+	margin: 5px 10px 10px 18px;
+	background: url('../image/tally/type_btn_save.gif') repeat scroll -234px
+		0px transparent;
+}
+
+#tb-save.hover {
+	background-position: 0 0 !important;
+}
+
+#tb-save.active {
+	background-position: -117px 0 !important;
+}
+
+#box {
+	margin: 0px auto;
+	width: 1008px;
+}
+
+#box-t {
+	height: 8px;
+	line-height: 0;
+	font-size: 0px;
+	background: url('../image/tally/index_box_t.png') no-repeat scroll 0% 0%
+		transparent;
+}
+
+#box-m {
+	background: url('../image/tally/index_box_bg.png') repeat-y scroll 0% 0%
+		transparent;
+	padding: 0px 12px;
+}
+
+#box-b {
+	height: 12px;
+	line-height: 0;
+	font-size: 0px;
+	background: url('../image/tally/index_box_b.png') no-repeat scroll 0% 0%
+		transparent;
+}
+
+#filter-tit {
+	height: 41px;
+	clear: both;
+	position: relative;
+}
+
+#filter-tit .ft-date {
+	float: left;
+	height: 29px;
+	display: inline;
+	padding: 12px 0px 0px 142px;
+	background: url('../image/tally/rt_name.gif') no-repeat scroll 0px 6px
+		transparent;
+}
+
+#filter-tit .ft-date li {
+	float: left;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#filter-tit .ft-total {
+	float: right;
+	padding: 13px 3px 0px 0px;
+}
+
+#filter-tit .ft-total li {
+	float: right;
+	font-weight: bold;
+}
+
+.green {
+	color: #00A32C;
+}
+
+#filter-tit .ft-total .number {
+	font-size: 14px;
+}
+
+.orange {
+	color: #FF2400;
+}
+
+#filter-tit .ft-total li .normal {
+	font-weight: normal;
+}
+
+#filter-bar {
+	clear: both;
+	height: 40px;
+	background: url('../image/tally/fb_bg.gif') repeat-x scroll 0px -40px
+		transparent;
+}
+
+#filter-bar .fb-left {
+	float: left;
+	height: 40px;
+}
+
+#filter-bar .fb-l-bg {
+	background: url('../image/tally/fb_bg.gif') no-repeat scroll 0% 0%
+		transparent;
+	width: 11px;
+}
+
+#filter-bar .fb-tit {
+	width: 6px;
+}
+
+#filter-bar .fb-all {
+	width: 124px;
+}
+
+#fb-all,#fb-year,#fb-month {
+	text-align: center;
+	width: 75px;
+	background: url('../image/tally/fb_btn.gif') repeat scroll -352px 0px
+		transparent;
+}
+
+/* #fb-all.hover {
+	background-position: -352px -26px;
+}
+ 
+#filter-bar .fb-all .choose {
+	background-position: -352px -52px;
+	color: #FFF;
+} */
+
+#filter-bar .fb-btn {
+	line-height: 22px;
+	display: block;
+	float: left;
+	height: 26px;
+	margin-top: 7px;
+	color: #3C3C3C;
+}
+
+#filter-bar .fb-choose {
+	width: 557px;
+	position: relative;
+	z-index: 1100;
+}
+
+#filter-bar .fb-btn span {
+	display: block;
+	width: 75px;
+	height: 24px;
+	float: right;
+	border-right: 1px solid #919191;
+	background: url('../image/tally/fb_1.gif') no-repeat scroll 59px 8px
+		transparent;
+}
+
+#fb-category,#fb-account,#fb-store,#fb-project,#fb-type,#fb-time,#fb-member
+	{
+	background: url('../image/tally/fb_btn.gif') repeat scroll 0% 0%
+		transparent;
+}
+
+#fb-category {
+	width: 89px;
+}
+
+#fb-account,#fb-store,#fb-project,#fb-type,#fb-member {
+	width: 88px;
+	background-position: -88px 0px;
+}
+
+#fb-time {
+	width: 88px;
+	background-position: -175px 0px;
+}
+
+#filter-bar .fb-key {
+	width: 350px;
+}
+
+#filter-bar .fb-key-box {
+	height: 36px;
+	margin-top: 1px;
+	padding-left: 50px;
+}
+
+#filter-bar .fb-key-box span {
+	float: left;
+	margin: 10px 0px 0px;
+	color: #413F41;
+}
+
+#filter-bar .fb-key-box input {
+	float: left;
+	color: #E7E7E7;
+	font-size: 12px;
+	border: medium none;
+	height: 14px;
+	padding: 6px 3px 3px;
+	width: 164px;
+	margin-top: 6px;
+	background: url('../image/tally/fb_btn.gif') repeat scroll 0px -52px
+		transparent;
+}
+
+#filter-bar .fb-key-box #search-btn {
+	width: 26px;
+	height: 23px;
+	margin-top: 6px !important;
+	background: url('../image/tally/fb_btn.gif') repeat scroll -216px -52px
+		transparent;
+}
+
+#filter-bar .fb-edit {
+	z-index: 1100;
+	width: 194px;
+	line-height: 22px;
+	color: #3C3C3C;
+	background: url('../image/tally/fb_bg.gif') no-repeat scroll right -80px
+		transparent;
+	position: relative;
+	padding-left: 51px;
+}
+
+#filter-bar #fb-ctrlall {
+	display: block;
+	width: 89px;
+	height: 26px;
+	line-height: 22px;
+	margin-top: 7px;
+	background: url('../image/tally/fb_btn.gif') no-repeat scroll -263px 0px
+		transparent;
+}
+
+#filter-bar #fb-ctrlall span {
+	display: block;
+	float: right;
+	border-right: medium none;
+	height: 24px;
+	width: 76px;
+	background: url('../image/tally/fb_1.gif') no-repeat scroll 59px 8px
+		transparent;
+}
+
+#filter-bar #fb-time span {
+	border: medium none;
+	width: 76px;
+}
+
+#filter-content {
+	clear: both;
+	margin-top: 6px;
+}
+
+#fc-right { /* float: left; */
+	width: 983px;
+}
+
+#fc-tit {
+	font-size: 14px;
+	height: 29px;
+	margin-bottom: 1px;
+}
+
+#fc-tit li {
+	float: left;
+	height: 29px;
+	line-height: 28px;
+	color: #325250;
+	font-weight: bold;
+	cursor: default;
+	background: url('../image/tally/fcy_bg.gif') repeat-x scroll 0px -29px
+		transparent;
+}
+
+#fcy-next,#fcy-prev {
+	cursor: default;
+	display: block;
+	float: left;
+	height: 29px;
+	background: url('../image/tally/fcy_bg.gif') repeat-x scroll 0px -29px
+		transparent;
+}
+
+#fcy-next span,#fcy-prev span {
+	display: block;
+	float: left;
+	height: 29px;
+}
+
+#fcy-prev .fcy-pl {
+	width: 3px;
+	background: url('../image/tally/fcy_bg.gif') no-repeat scroll 0% 0%
+		transparent;
+}
+
+#fcy-prev {
+	width: 27px;
+}
+
+#fc-tit .l-1 {
+	width: 56px;
+}
+
+#fc-tit li span {
+	display: block;
+	height: 29px;
+	cursor: default;
+}
+
+#fc-tit li .out {
+	background: url('../image/tally/fcy_line.gif') no-repeat scroll right
+		0px transparent;
+	padding-right: 16px;
+}
+
+#fc-tit .active .span,#fc-tit .choose .span {
+	background-position: 0px -174px;
+}
+
+#fc-tit .l-2 {
+	width: 115px;
+	text-align: center;
+}
+
+#fc-tit .l-3 {
+	width: 139px;
+	text-align: center;
+}
+
+#fc-tit .l-4 {
+	width: 127px;
+	text-align: center;
+}
+
+#fc-tit .l-5 {
+	width: 147px;
+	text-align: center;
+}
+
+#fc-tit .l-6 {
+	width: 110px;
+	text-align: center;
+}
+
+#fc-tit .l-7 {
+	width: 200px;
+	text-indent: 40px;
+}
+
+#fc-tit .l-8 {
+	width: 62px;
+}
+
+#fc-tit .l-8 span {
+	display: block;
+	height: 29px;
+	width: 3px;
+	float: right;
+	background: url('../image/tally/fcy_bg.gif') no-repeat scroll 0px -58px
+		transparent;
+}
+
+#list .list-date {
+	height: 25px;
+	background: url('../image/tally/list_shadow.gif') no-repeat scroll
+		center top transparent;
+}
+
+#list .list-date .ul1 {
+	float: left;
+	font-size: 13px;
+	letter-spacing: -1px;
+	width: 60px;
+	color: #8D9391;
+	padding-left: 4px;
+	line-height: 24px;
+	height: 25px;
+}
+
+#list .list-date .ul1 li {
+	padding-left: 15px;
+	float: left;
+	height: 25px;
+	font-family: arial narrow;
+}
+
+#list .list-date .ul1 li span {
+	font-family: Georgia;
+	padding-left: 1px;
+}
+
+#list .list-date .ul1 .day {
+	color: #0F675E;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 0px !important;
+	padding-right: 2px;
+}
+
+#list .list-date .ul2 {
+	float: left;
+	height: 25px;
+	width: 910px;
+}
+
+#list .list-date .ul2 .lt-l {
+	float: left;
+}
+
+#list .list-date .lt-payout,#list .list-date .lt-income {
+	width: 121px;
+	line-height: 24px;
+	font-weight: bold;
+	float: right;
+}
+
+#list .list-date .lt-income {
+	width: 125px;
+}
+
+#list .list-date .lt-payout {
+	width: 125px;
+}
+
+#list .list-line {
+	background: url('../image/tally/list_shadow_1.gif') repeat-x scroll left
+		top transparent;
+	font-size: 0px;
+	line-height: 0;
+	padding: 0px;
+	margin: 0px;
+	height: 3px;
+}
+
+#list .list-tit {
+	clear: both;
+	height: 26px;
+	cursor: pointer;
+}
+
+#list .list-hover .ul2,#list .list-hover .ul1 {
+	background: url('../image/tally/li_bg.gif') 0 -25px repeat-x;
+}
+
+#list .list-tit ul {
+	float: left;
+	height: 26px;
+	background: none repeat scroll 0% 0% #E6EFEE;
+}
+
+#list .list-tit .ul1 {
+	width: 81px;
+	border-left: 1px solid #DFE9E8;
+}
+
+#list .list-show .ul1 {
+	border-left: 1px solid #E3E898;
+}
+
+#list .list-show .ul2,#list .list-show .ul1 {
+	background: url('../image/tally/li_bg.gif') repeat-x scroll 0px -50px
+		transparent;
+}
+
+#list .list-tit li {
+	height: 25px;
+	line-height: 25px;
+	border-bottom: 1px solid #DBDFE0;
+}
+
+#list .list-tit-last li {
+	border-bottom: 1px solid #CDD3D1;
+}
+
+#list .list-tit .ul1 li {
+	width: 80px;
+	float: left;
+	border-left: 1px solid #ECF2F0;
+	text-align: center;
+	color: #494949;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Bookman Old Style;
+}
+
+#list .list-show .ul1 li {
+	color: #01A730;
+	border-bottom: 1px solid #CCD07B;
+	border-left: 1px solid #DEE294;
+}
+
+#list .list-tit .ul2 {
+	color: #010101;
+	border-right: 1px solid #DFE9E8;
+}
+
+#list .list-show .ul2 {
+	border-right: 1px solid #E3E898;
+}
+
+#list .list-show .ul2,#list .list-show .ul1 {
+	background: url('../image/tally/li_bg.gif') repeat-x scroll 0px -50px
+		transparent;
+}
+
+#list .list-tit .ul2 li {
+	float: left;
+	background: url('../image/tally/li_bg.gif') no-repeat scroll left top
+		transparent;
+}
+
+#list .list-show .ul2 li {
+	border-bottom: 1px solid #CCD07B;
+	color: #2B4D3E;
+	background: none repeat scroll 0% 0% transparent !important;
+}
+
+#list .list-tit .ul2 .bt-1 {
+	width: 115px;
+	/* background: url('../image/tally/li_bg.gif') no-repeat scroll left top
+		#E4EAEA; */
+}
+
+#list .list-tit .ul2 .bt-1 .catename {
+	float: left;
+	padding-left: 10px;
+}
+
+#list .list-tit .ul2 .bt-1 .typename {
+	float: right;
+	color: #61C37D;
+	margin-right: 5px;
+}
+
+#list .list-tit .ul2 .bt-1 .typename5 {
+	color: #F97575;
+}
+
+#list .list-tit .ul2 .bt-2 {
+	width: 122px;
+	padding-right: 17px;
+	text-align: right;
+}
+
+#list .list-tit .ul2 .bt-3 {
+	width: 112px;
+	text-align: left;
+	padding-left: 15px;
+	/* background: url('../image/tally/li_bg.gif') no-repeat scroll left top
+		#E4EAEA; */
+}
+
+#list .list-tit .ul2 .bt-4 {
+	width: 129px;
+	padding-left: 18px;
+	text-align: left;
+}
+
+#list .list-tit .ul2 .bt-5 {
+	width: 95px;
+	padding-left: 15px;
+	text-align: left;
+	/* background: url('../image/tally/li_bg.gif') no-repeat scroll left top
+		#E4EAEA; */
+}
+
+#list .list-tit .ul2 .bt-6 {
+	width: 185px;
+	padding-left: 15px;
+	text-align: left;
+	overflow: hidden;
+}
+
+#list .list-tit .ul2 .bt-7 {
+	width: 60px;
+	border-right: 1px solid #ECF2F0;
+	background: none repeat scroll 0% 0% transparent;
+}
+
+#list .list-hover .ul2 .bt-7 {
+	border-right: 1px solid #C4D5D4;
+	background: url("../image/tally/fcy_way.gif") no-repeat scroll 35px
+		-431px transparent !important;
+}
+
+#list .list-show .ul2 .bt-7 {
+	border-right: 1px solid #DEE294;
+	background: url("../image/tally/fcy_way.gif") no-repeat scroll 35px
+		-481px transparent !important;
+}
+
+#list .list-box {
+	display: none;
+	height: 141px;
+	background: url('../image/tally/list_shadow.gif') repeat-x scroll center
+		top #FFF;
+}
+
+#list .list-box-nobg .list-box-in {
+	background: none repeat scroll 0% 0% transparent;
+}
+
+#list .list-box-in {
+	height: 141px;
+	background: url('../image/tally/list_shadow_1.gif') no-repeat scroll
+		left bottom transparent;
+}
+
+#list .lb-image,.lb-main,.lb-btn {
+	float: left;
+}
+
+.lb-main {
+	width: 700px;
+	margin-top: 3px;
+}
+
+.lb-btn {
+	width: 70px;
+	padding-left: 15px;
+}
+
+.list-box-payout .lb-imgbox,.list-box-transfer .lb-imgbox {
+	margin-top: 16px;
+	margin-left: 18px;
+}
+
+#list .img-box {
+	background: url('../image/tally/type_img_box.png') repeat scroll 0% 0%
+		transparent;
+}
+
+.lb-main .lb-ul {
+	clear: both;
+	height: 24px;
+	margin-top: 14px;
+}
+
+.lb-main .lb-li {
+	float: left;
+}
+
+#list .list-box-payout .lb-main label {
+	float: left;
+	display: block;
+	width: 65px;
+	height: 24px;
+	line-height: 24px;
+	text-align: right;
+}
+
+.selectspan {
+	float: left;
+	color: #4A4A4A;
+	height: 22px;
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+}
+
+#list .list-box-payout .lb-main .input {
+	width: 105px;
+	height: 19px;
+	border: medium none;
+	padding: 5px 0px 0px 2px !important;
+	margin: 0px !important;
+	background: url('../image/tally/list_input_new.png') no-repeat scroll
+		-279px 0px transparent;
+}
+
+#list .list-box-payout .lb-main .list-memo {
+	margin-left: 19px !important;
+	background-color: #ECEEED;
+	background-image: none;
+	border: 1px solid #EBEBEB;
+	padding: 3px 0px 0px 2px !important;
+	width: 565px;
+}
+
+.list-box-payout .lb-btn ul,.list-box-transfer .lb-btn ul {
+	margin-top: 17px;
+}
+
+.list-box-payout .lb-btn li,.list-box-transfer .lb-btn li {
+	margin-top: 15px;
+}
+
+.lb-btn a {
+	display: block;
+	width: 69px;
+	text-align: center;
+	height: 23px;
+	line-height: 21px;
+	color: #A7FFFF;
+	font-weight: bolder;
+	background: url('../image/tally/list_btn.png') repeat scroll 0% 0%
+		transparent;
+}
+
+.lb-btn a.hover {
+	background-position: 0px -23px;
+}
+
+.lb-btn a.active {
+	background-position: 0px -46px;
+}
+
+.panelDiv {
+	text-align: center;
+	margin-left: 80px;
+	margin-top: 30px;
+	font-size: 14px;
+}
+
+.panel-spanName {
+	width: 70px;
+	line-height: 24px;
+}
+
+.panel-inputName {
+	width: 104px;
+	height: 19px;
+	border: medium none;
+	padding: 5px 0px 0px 2px;
+	background: url('../image/tally/list_input_new.png') no-repeat scroll
+		right 0px transparent;
+}

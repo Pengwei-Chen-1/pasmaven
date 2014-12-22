@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+	<tlibversion>1.2</tlibversion>
+	<jspversion>2.0</jspversion>
+	<shortname>page</shortname>
+	<!--将来在页面用taglib引用时的uri属性,这部分的名字可以随便写，只要是符合HTTP网址形式的 -->
+	<uri>http://com.cpw.pas/page</uri>
+	<tag>
+		<!-- 标签名 -->
+		<name>pageTage</name>
+		<tagclass>com.cpw.util.Page</tagclass>
+		<attribute>
+			<!-- 属性名:当前页码 -->
+			<name>pageNum</name>
+			<!-- 该属性是否为必要的 -->
+			<required>true</required>
+			<!-- 属性值是否可以在JSP运行时期动态产生 -->
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- 超链接 -->
+			<name>url</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- 总记录数 -->
+			<name>count</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- 每页记录数 -->
+			<name>pageSize</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>

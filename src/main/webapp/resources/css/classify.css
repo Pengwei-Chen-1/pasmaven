@@ -1,0 +1,794 @@
+@CHARSET "UTF-8";
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#mainContent .t {
+	background-image: url('../image/classify/box_t.png');
+	font-size: 0px;
+	height: 8px;
+	width: 100%;
+}
+
+#mainContent .b {
+	background-image: url('../image/classify/box_b.png');
+	font-size: 0px;
+	height: 12px;
+	width: 100%;
+}
+
+#divBox {
+	width: 1008px;
+	position: relative;
+	background: url('../image/classify/box_bg.png') repeat-y scroll 0% 0%
+		transparent;
+}
+
+#divBox .left {
+	width: 198px;
+	float: left;
+	margin-left: 2px;
+	padding: 25px 0px;
+}
+
+#divBox .right {
+	margin-left: 215px;
+	margin-right: 19px;
+	height: auto !important;
+	min-height: 450px;
+}
+
+#divBox .left h3 {
+	height: 35px;
+	background: url('../image/classify/nav_tit_set.gif') no-repeat scroll
+		40px top transparent;
+}
+
+#divBox .left li {
+	padding: 0px;
+	margin: 0px;
+	height: 45px;
+	width: 187px;
+}
+
+#divBox .left li a {
+	display: block;
+	line-height: 44px;
+	padding: 0px;
+	margin: 0px 0px 0px 1px;
+	height: 45px;
+	font-size: 12px;
+	color: #5F5E64;
+	background: url('../image/classify/nav_bg.gif') no-repeat scroll left
+		top transparent;
+}
+
+#divBox .left li.select a {
+	background: url('../image/classify/nav_bg.gif') no-repeat scroll -186px
+		0px transparent;
+	color: #1F7397;
+	font-weight: bold;
+}
+
+#divBox .left li a .icon {
+	display: inline;
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin: 9px 12px 0px 24px;
+	background: url('../image/classify/set_icon_24.png') repeat scroll 0% 0%
+		transparent;
+}
+
+.cat_t {
+	padding-top: 10px;
+}
+
+#list {
+	padding-bottom: 1px;
+}
+
+.rTit {
+	height: 48px;
+	margin-bottom: 10px;
+}
+
+.rTit .rTit-icon {
+	display: block;
+	width: 48px;
+	height: 48px;
+	float: left;
+	background: url('../image/classify/set_icon_48.png') no-repeat scroll
+		-96px top transparent;
+}
+
+.rTit .text {
+	color: #1F7397;
+	float: left;
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 15px;
+	padding-top: 28px;
+}
+
+.list-top {
+	height: 34px;
+	padding-left: 4px;
+	background: url('../image/classify/cat_top.gif') no-repeat scroll 0px
+		0px transparent;
+}
+
+.list-top ul {
+	height: 34px;
+	background: url('../image/classify/cat_top_bg.gif') repeat-x scroll 0px
+		0px transparent;
+}
+
+#list li {
+	float: left;
+	line-height: 32px;
+}
+
+.list-top ul li {
+	height: 28px;
+	padding-top: 6px;
+	text-align: center;
+	width: 102px;
+	color: #98EFE9;
+	font-size: 13px;
+	font-weight: bold;
+	display: inline;
+}
+
+.list-top li.select a {
+	color: #06322F;
+	background-position: -107px 0px;
+}
+
+.list-top #l-out.select a span {
+	background-position: 0px -28px;
+}
+
+.list-top ul li a {
+	color: #FFF;
+	display: block;
+	width: 68px;
+	padding-left: 31px;
+	height: 28px;
+	line-height: 28px;
+	position: relative;
+	text-align: left;
+	background: url('../image/classify/cat_top.gif') no-repeat scroll -8px
+		0px transparent;
+}
+
+.list-top #l-out {
+	margin-left: 15px;
+}
+
+.list-top #l-in a span {
+	background: url('../image/classify/cat.gif') no-repeat scroll -14px 0px
+		transparent;
+}
+
+.list-top #l-in.select a span {
+	background-position: -14px -28px;
+}
+
+.list-top ul li a span {
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	left: 13px;
+	top: 7px;
+	line-height: 0;
+	font-size: 0px;
+}
+
+.list-top #l-out a span {
+	background: url('../image/classify/cat.gif') no-repeat scroll 0px 0px
+		transparent;
+}
+
+.list-top #l-out.select a span {
+	background-position: 0px -28px;
+}
+
+.list-top #l-store a span {
+	background: url('../image/classify/cat.gif') no-repeat scroll -28px 0px
+		transparent;
+}
+
+.list-top #l-store.select a span {
+	background-position: -28px -28px;
+}
+
+.list-top #l-pro a span {
+	background: url('../image/classify/cat.gif') no-repeat scroll -42px 0px
+		transparent;
+}
+
+.list-top #l-pro.select a span {
+	background-position: -42px -28px;
+}
+
+.list-top #l-member a span {
+	background: url('../image/classify/cat.gif') no-repeat scroll -70px 0px
+		transparent;
+}
+
+.list-top #l-member.select a span {
+	background-position: -70px -28px;
+}
+
+.list-top #l-template a span {
+	background: url('../image/classify/cat.gif') no-repeat scroll -56px 0px
+		transparent;
+}
+
+.list-top #l-template.select a span {
+	background-position: -56px -28px;
+}
+
+.list-tit {
+	height: 30px;
+	padding-left: 5px;
+	color: #06322F;
+	font-weight: bold;
+	background: url('../image/classify/bg1.gif') repeat-x scroll 0px -62px
+		transparent;
+}
+
+.list-tit ul {
+	height: 30px;
+}
+
+.list-tit ul li {
+	line-height: 30px !important;
+}
+
+.list-tit .l-1 {
+	width: 130px;
+	padding-left: 50px;
+}
+
+.list-tit span {
+	display: block;
+	width: 60px;
+}
+
+.list-tit .l-1 span {
+	float: left;
+}
+
+.list-tit .l-line {
+	height: 30px;
+}
+
+.list-tit .l-line span {
+	overflow: hidden;
+	width: 2px;
+	height: 100%;
+	background: url('../image/classify/bg1.gif') no-repeat scroll 0px 0px
+		transparent;
+}
+
+.list-tit .l-2 {
+	width: 183px !important;
+	text-align: center;
+}
+
+.list-tit .l-3 {
+	width: 200px;
+	text-align: center;
+}
+
+.list-tit .l-4 {
+	width: 117px;
+	text-align: center;
+	background-image: none;
+}
+
+.list-msg {
+	height: 32px;
+	padding-left: 2px;
+	display: block;
+	background: url('../image/classify/bg1.gif') repeat-x scroll 0px -92px
+		transparent;
+	line-height: 28px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.list-msg ul {
+	height: 32px;
+	background: url('../image/classify/bg1.gif') repeat-x scroll 0px -92px
+		transparent;
+}
+
+.list-box .lb-row li,.list-msg li {
+	height: 32px;
+}
+
+.list-msg .li-level1 {
+	padding-left: 80px;
+	width: 100px;
+	position: relative;
+}
+
+.list-msg span {
+	float: left;
+	display: block;
+}
+
+.list-msg .li-level1 span.cat24,.list-box .li-level2 span.cat24 {
+	position: absolute;
+	left: 38px;
+	top: 5px;
+	width: 24px;
+	height: 24px;
+	background: url('../image/classify/cat24.png') no-repeat scroll 0px 0px
+		transparent;
+	line-height: 0;
+	font-size: 0px;
+}
+
+.list-msg .li-level2 {
+	padding-left: 0px;
+	text-align: center;
+	width: 183px !important;
+}
+
+.list-msg .li-tj {
+	width: 200px;
+	text-align: center;
+}
+
+.list-msg .li-tj .tj-bar {
+	width: 193px;
+	float: left;
+	overflow: hidden;
+	padding-left: 4px;
+	padding-right: 3px;
+	position: relative;
+}
+
+.list-msg .li-tj .tjz {
+	width: 131px;
+	text-align: right;
+	float: left;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.list-msg .l-operate {
+	padding-left: 19px;
+}
+
+.list-box .l-operate .btnEdit,.list-msg .l-operate .btnEdit {
+	background: url('../image/classify/edit.png') no-repeat scroll left top
+		transparent;
+}
+
+.list-box .l-operate a,.list-msg .l-operate a {
+	cursor: pointer;
+	width: 25px;
+	height: 25px;
+	display: block;
+	margin-top: 4px;
+	float: left;
+	line-height: 0;
+	font-size: 0px;
+}
+
+.list-box .l-operate .btnDelete,.list-msg .l-operate .btnDelete {
+	cursor: pointer;
+	width: 25px;
+	height: 25px;
+	display: block;
+	margin-top: 5px;
+	float: left;
+	background: url('../image/classify/del.png') no-repeat scroll left top
+		transparent;
+}
+
+#list .list-msg ul .cat-r-bg {
+	height: 32px;
+	padding-left: 0px;
+	float: right;
+	width: 2px;
+	overflow: hidden;
+	background: url('../image/classify/bg1.gif') no-repeat scroll 0px -92px
+		transparent;
+}
+
+.list-box .l-operate .btnDelete:hover,.list-msg .l-operate .btnDelete:hover
+	{
+	background: url('../image/classify/del.png') no-repeat scroll -25px top
+		transparent;
+}
+
+.hidden {
+	display: none;
+}
+
+.list-box {
+	overflow: hidden;
+}
+
+.list-box .lb-row {
+	width: 100%;
+}
+
+.list-box .lb-row ul {
+	height: 32px;
+}
+
+.list-box .li-level1 {
+	padding-left: 0px;
+	text-align: center;
+	width: 187px;
+	position: relative;
+}
+
+.list-box .li-level2 {
+	padding-left: 80px;
+	width: 107px !important;
+	color: #06322F;
+	white-space: nowrap;
+	overflow: hidden;
+	position: relative;
+}
+
+.list-box .l-operate {
+	width: 165px;
+	height: 25px;
+	margin-left: 0px;
+	padding-left: 12px;
+}
+
+.list-box .addRow .li-level2 {
+	padding-left: 33px;
+	width: 167px !important;
+}
+
+#list .addContent,#addFirstCtg .addContent {
+	cursor: pointer;
+	display: block;
+	line-height: 28px;
+	height: 28px;
+	padding-top: 2px;
+	padding-left: 20px;
+	width: 90px;
+	background: url('../image/classify/add.png') no-repeat scroll 0px 2px
+		transparent;
+}
+
+#list .addText,#addFirstCtg .addText {
+	padding-left: 9px;
+	display: block;
+	color: #464749;
+	float: left;
+	width: 80px;
+	height: 26px;
+}
+
+#list #addFirstCtg {
+	padding: 4px 0px 20px;
+}
+
+#list .addContent,#addFirstCtg .addContent {
+	cursor: pointer;
+	display: block;
+	line-height: 28px;
+	height: 28px;
+	padding-top: 2px;
+	padding-left: 20px;
+	width: 90px;
+	background: url('../image/classify/add.png') no-repeat scroll 0px 2px
+		transparent;
+}
+
+#list .addContent:hover,#addFirstCtg .addContent:hover {
+	background-position: -110px 2px;
+}
+
+.list-box .hr {
+	height: 1px;
+	width: 100%;
+	overflow: hidden;
+	background-color: #CECECE;
+}
+
+.level1 {
+	height: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	text-indent: 61px;
+	color: #0E3E3D;
+	border-top: 1px solid #FFF;
+	border-bottom: 1px solid #CECECE;
+	background: none repeat scroll 0% 0% #B0C6C5;
+}
+
+.tmp-list .tit-show {
+	background-position: 0px -30px;
+}
+
+.li1 {
+	width: 142px;
+	text-align: center;
+}
+
+.li2 {
+	width: 100px !important;
+	padding-left: 74px !important;
+}
+
+.li3 {
+	width: 121px;
+	text-align: center;
+}
+
+.li4 {
+	width: 115px;
+	text-align: right;
+	padding-right: 18px;
+}
+
+.li5 {
+	width: 180px;
+}
+
+input {
+	border: 1px solid #195653;
+	height: 20px;
+	line-height: 22px;
+}
+
+.editbox {
+	border-bottom: 1px solid #CECECE;
+	height: 137px;
+	padding-top: 15px;
+}
+
+.lb-main {
+	float: left;
+	width: 666px;
+}
+
+.lb-btn {
+	float: left;
+	width: 90px;
+	padding-top: 12px;
+}
+
+.editbox .lb-ul {
+	height: 24px;
+	clear: both;
+	margin-top: 12px;
+}
+
+.editbox .lb-li {
+	float: left;
+	line-height: 24px !important;
+}
+
+.editbox label {
+	float: left;
+	text-align: right;
+}
+
+#am-editbox .list-label-0 {
+	width: 85px;
+}
+
+#am-editbox .list-label-2 {
+	width: 75px;
+}
+
+#am-editbox .list-label-1 {
+	width: 75px;
+}
+
+.list-label-0 {
+	width: 110px;
+}
+
+.editbox .input {
+	width: 109px;
+	height: 22px;
+	border: medium none;
+	padding: 2px 0px 0px 2px !important;
+	margin: 0px !important;
+	background: url('../image/classify/list_input.jpg') no-repeat scroll
+		right 0px transparent;
+}
+
+.list-label-1 {
+	width: 80px;
+}
+
+.selectspan {
+	z-index: 100;
+}
+
+.selectspan {
+	float: left;
+	color: #4A4A4A;
+	height: 22px;
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+}
+
+.temSelect {
+	height: 24px;
+	width: 111px;
+	background-color: #E1E3E2;
+	border: 1px solid #C0C0C0;
+}
+
+.editbox label {
+	float: left;
+	text-align: right;
+}
+
+.list-label-2 {
+	width: 80px;
+}
+
+.editbox .list-memo {
+	background-color: #ECEEED;
+	background-image: none;
+	border: 1px solid #EBEBEB;
+	height: 19px;
+	padding: 3px 0px 0px 2px !important;
+	width: 111px;
+}
+
+.lb-btn {
+	float: left;
+	width: 90px;
+	padding-top: 12px;
+}
+
+.lb-btn a {
+	display: block;
+	width: 69px;
+	text-align: center;
+	height: 23px;
+	line-height: 21px;
+	color: #A7FFFF;
+	font-weight: bolder;
+	background: url('../image/classify/list_btn.png') repeat scroll 0% 0%
+		transparent;
+}
+
+.list-box .l-operate .btnEdit:hover,.list-msg .l-operate .btnEdit:hover
+	{
+	background: url('../image/classify/edit.png') no-repeat scroll -25px top
+		transparent;
+}
+
+.lb-btn a:hover {
+	background-position: 0px -23px;
+}
+
+.lb-btn a:active {
+	background-position: 0 -46px;
+}
+
+.lb-btn li {
+	margin-bottom: 14px;
+}
+
+.pl-main {
+	background: none repeat scroll 0% 0% #FFF;
+}
+
+.addbtn-div {
+	height: 49px;
+	padding: 20px 0px 0px 25px;
+}
+
+.addbtn-div .addbtn-payout {
+	width: 135px;
+	background-position: 0px -49px;
+}
+
+.addbtn-div .addbtn-payout-s {
+	background-position: 0px 0px;
+}
+
+.addbtn-div .addbtn-income {
+	width: 290px;
+	background-position: 0px -98px;
+}
+
+.addbtn-div .addbtn-income-s {
+	background-position: 0px -147px;
+}
+
+.addbtn-div a {
+	display: inline-block;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	height: 49px;
+	background: url('../image/classify/template_add.gif') no-repeat scroll
+		0px 0px transparent;
+}
+
+#am-editbox {
+	border-bottom: medium none;
+	padding-top: 10px;
+}
+
+#am-editbox .lb-main {
+	width: 600px;
+}
+
+.lb-main {
+	float: left;
+	width: 666px;
+}
+
+.popup_model .popup-btndiv {
+	height: 57px;
+	position: relative;
+}
+
+.popup-btndiv {
+	clear: both;
+	padding: 5px 0px 10px;
+	text-align: center;
+}
+
+.popup-submit {
+	border: medium none;
+	width: 103px;
+	height: 37px;
+	margin-bottom: 10px;
+	background: url('../image/classify/popup_btn.gif') repeat scroll 0% 0%
+		transparent;
+}
+
+.popup_model .popup-btndiv input:hover {
+	background-position: -103px 0px;
+}
+
+.panel-spanName {
+	width: 70px;
+	line-height: 24px;
+}
+
+.panel-inputName {
+	width: 104px;
+	height: 19px;
+	border: medium none;
+	padding: 5px 0px 0px 2px;
+	background: url('../image/tally/list_input_new.png') no-repeat scroll
+		right 0px transparent;
+}
+
+.imagefileSubmit {
+	margin-left: 120px;
+	cursor: pointer;
+	margin-top: 20px;
+	border: medium none;
+	width: 103px;
+	height: 37px;
+	margin-bottom: 10px;
+	background: url('../image/tally/popup_btn.gif') repeat scroll 0% 0%
+		transparent;
+	margin-top: 20px;
+}
+
+.panelDiv {
+	margin-left: 30%;
+	margin-top: 25px;
+}

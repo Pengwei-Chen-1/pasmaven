@@ -1,0 +1,61 @@
+@CHARSET "UTF-8";
+
+body {
+	width: 100%;
+	font: 12px Tahoma, Helvetica, Arial, '宋体', sans-serif;
+	overflow-x: hidden;
+}
+
+#header {
+	position: relative;
+	z-index: 100;
+	height: 45px;
+	background: url(../image/header-bg.png) repeat-x scroll 0% 0%
+		transparent;
+	min-width: 1008px;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,img {
+	margin: 0px;
+	padding: 0px;
+}
+
+.scroll {
+	width: 100%;
+	height: 343px;
+	overflow: hidden;
+	position: relative;
+	border: #ccc 1px solid;
+}
+
+.slider {
+	position: absolute;
+}
+
+.slider img {
+	width: 100%;
+	height: 340px;
+	display: block;
+}
+
+td {
+	font-size: 20px;
+	font-family: "Microsoft Yahei";
+	padding: 10px;
+}
+
+#logo {
+	width: 91px;
+	padding-left: 300px;
+	float: none;
+	position: absolute;
+}
+
+#regTest {
+	padding-left: 70%;
+	color: #454545;
+	padding-top: 10px;
+	font-family: "Microsoft Yahei";
+	font-size: 14px;
+	font-family: "Microsoft Yahei";
+}

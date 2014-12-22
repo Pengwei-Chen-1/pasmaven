@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+
+body {
+	width: 100%;
+	font: 12px Tahoma, Helvetica, Arial, '宋体', sans-serif;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,img {
+	margin: 0px;
+	padding: 0px;
+}
+
+#bottom {
+	margin-left: 35%;
+	margin-top: 20px;
+	padding: 10px 10px 10px 10px;
+	width: 330px;
+	background-color: #EBEBEB;
+}
+
+#copyright {
+	text-align: center; font-family : arial;
+	color: #8C8C8C;
+	margin-top: 15px;
+	font-family: arial;
+}

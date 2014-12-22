@@ -1,0 +1,320 @@
+@CHARSET "UTF-8";
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#mainContent .t {
+	background-image: url('../image/report/box_t.png');
+	font-size: 0px;
+	height: 8px;
+	width: 100%;
+}
+
+#divBox {
+	width: 1008px;
+	position: relative;
+	background: url('../image/report/box_bg.png') repeat-y scroll 0% 0%
+		transparent;
+}
+
+#mainContent .b {
+	background-image: url('../image/report/box_b.png');
+	font-size: 0px;
+	height: 12px;
+	width: 100%;
+}
+
+#divBox .left {
+	width: 198px;
+	float: left;
+	margin-left: 2px;
+	padding: 25px 0px;
+}
+
+#divBox .right {
+	padding-bottom: 50px;
+	min-height: 500px;
+	margin-left: 215px;
+	margin-right: 19px;
+	height: auto !important;
+}
+
+#divBox .left h3 {
+	height: 35px;
+	background: url('../image/report/nav_tit_report.gif') no-repeat scroll
+		40px top transparent;
+}
+
+#divBox .left .first {
+	height: 43px;
+}
+
+#divBox .left li {
+	padding: 0px;
+	margin: 0px;
+	height: 45px;
+	width: 187px;
+}
+
+#divBox .left li.select a {
+	background: url('../image/report/nav_bg.gif') no-repeat scroll -186px
+		0px transparent;
+	color: #1F7397;
+	font-weight: bold;
+}
+
+#divBox .left li a {
+	display: block;
+	line-height: 44px;
+	padding: 0px;
+	margin: 0px 0px 0px 1px;
+	height: 45px;
+	font-size: 12px;
+	color: #5F5E64;
+	background: url('../image/report/nav_bg.gif') no-repeat scroll left top
+		transparent;
+}
+
+#divBox .left li a:hover {
+	background-position: -372px 0px;
+}
+
+#divBox .left li a .icon {
+	display: inline;
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin: 9px 12px 0px 24px;
+	background: url('../image/report/report_icon_24.png') repeat scroll 0px
+		0px transparent;
+}
+
+#divBox .left li a .icon8 {
+	background-position: -168px 0px;
+}
+
+#divBox .left li a .icon10 {
+	background-position: -216px 0px;
+}
+
+.rTit {
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+
+.right .h3 {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.right .h3 h3 {
+	font-size: 20px;
+	line-height: 40px;
+}
+
+.right #Unit,.right #Unit1 {
+	text-align: right;
+	margin-top: -22px;
+	line-height: 26px;
+	margin-right: 25px;
+}
+
+#spendingTitle {
+	padding-left: 20px;
+	background-color: #127968;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: bold;
+	height: 30px;
+	padding-top: 8px;
+}
+
+.tableList th {
+	background: url('../image/report/fcy_bg.gif') repeat-x scroll 0px -29px
+		transparent;
+	height: 29px;
+	text-align: center;
+	color: #375756;
+	vertical-align: middle;
+	border-left: 1px solid #D1DBDA;
+	border-right: 1px solid #B1BBBA;
+}
+
+.tableList th.first {
+	border-left: medium none;
+}
+
+.tableList th.first span {
+	display: block;
+	height: 29px;
+	line-height: 29px;
+	background: url('../image/report/fcy_bg.gif') no-repeat scroll 0px 0px
+		transparent;
+	position: relative;
+}
+
+.tableList th.end {
+	border-right: medium none;
+}
+
+.tableList th.end span {
+	display: block;
+	height: 29px;
+	line-height: 29px;
+	background: url('../image/report/fcy_bg.gif') no-repeat scroll right
+		-58px transparent;
+}
+
+.listDiv {
+	margin-top: 1px;
+}
+
+.listDiv ul {
+	height: 25px;
+	border-bottom: 1px solid #DAE0DE;
+}
+
+.listDiv .li1 {
+	width: 70%;
+	text-align: center;
+	background-color: #E4EAEA;
+}
+
+.listDiv li {
+	float: left;
+	height: 25px;
+	line-height: 24px;
+}
+
+.listDiv .li3 {
+	width: 30%;
+	text-align: center;
+	background: url('../image/report/li_bg.gif') no-repeat scroll left top
+		#E4EAEA;
+}
+
+.money {
+	font-family: sans-serif, Arial, Tahoma !important;
+}
+
+.list-shadow {
+	padding-left: 100px;
+	background: url('../image/report/list_shadow.gif') no-repeat scroll left
+		top transparent;
+	font-size: 0px;
+	height: 3px;
+	line-height: 0;
+}
+
+.list-shadow-in {
+	background: url('../image/report/list_shadow.gif') no-repeat scroll
+		right top transparent;
+	font-size: 0px;
+	height: 3px;
+	line-height: 0;
+}
+
+#incomeText {
+	padding-left: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	height: 30px;
+	padding-top: 8px;
+	background-color: #891B1A;
+	color: #FFF;
+}
+
+.allMoneyText {
+	line-height: 30px;
+	padding-right: 15px;
+	text-align: right;
+	color: #127968;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#trendTable .first {
+	padding-right: 20px !important;
+}
+
+#trendTable th {
+	text-align: right;
+	padding-right: 30px;
+}
+
+#trendTable .end {
+	padding-right: 0px;
+}
+
+.rowH3 td {
+	background-color: rgb(84, 85, 84) !important;
+	font-size: 14px;
+	color: rgb(255, 255, 255) !important;
+	font-weight: bold;
+	border-top: 1px solid #FFF;
+	height: 28px;
+	border-bottom: medium none;
+	border-right: medium none !important;
+}
+
+.rowH3 .td1,.rowH2 .td1 {
+	text-align: left;
+	padding-left: 20px;
+}
+
+#tb1 .td2,#tb1 .td3,#tb1 .td4 {
+	text-align: right;
+	padding-right: 30px;
+}
+
+.rowH1 .td1 {
+	text-align: right;
+	padding-right: 20px;
+}
+
+#tb1 .td2 {
+	color: #B91D0C;
+	background-color: #E6EFEE;
+}
+
+#tb1 .td3 {
+	color: #005915;
+}
+
+.tableList td {
+	color: #3A3C3A;
+	cursor: default;
+	height: 26px;
+	text-align: center;
+	background-color: #E4EAEA;
+	border-right: 1px solid #DAE0E0;
+	border-bottom: 1px solid #DAE0DE;
+}
+
+#tb1 .td4 {
+	background-color: #E6EFEE;
+}
+
+.bigtit {
+	padding-left: 2px;
+	background: url('../image/report/tit_bg.gif') no-repeat scroll 0px 0px
+		transparent;
+	height: 37px;
+	line-height: 36px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.bigtit-out {
+	padding-right: 2px;
+	background: url('../image/report/tit_bg.gif') no-repeat scroll right
+		-74px transparent;
+}
+
+.bigtit-in {
+	background: url('../image/report/tit_bg.gif') repeat-x scroll right
+		-37px transparent;
+}

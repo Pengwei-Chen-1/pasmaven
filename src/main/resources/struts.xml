@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="struts2" extends="struts-default">
+		<!-- 判断用户是否登录的拦截器 -->
+		<interceptors>
+			<interceptor name="loginInter" class="com.cpw.interceptor.LoginInterceptor"></interceptor>
+			<interceptor-stack name="loginStack">
+				<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="loginInter" />
+			</interceptor-stack>
+		</interceptors>
+		<!-- 默认拦截全部 -->
+		<default-interceptor-ref name="loginStack" />
+		<!-- 定义全局Result -->
+		<global-results>
+			<!-- 当返回login视图名时，转入/login.jsp页面 -->
+			<result name="login">index.jsp</result>
+		</global-results>
+
+		<!-- userAction -->
+		<action name="user_*" class="com.cpw.action.UserAction" method="{1}">
+			<result name="success">suc.jsp</result>
+			<result name="login_suc" type="redirectAction">tally_init</result>
+			<result name="ERROR">suc.jsp</result>
+			<result name="login_Fail">index.jsp</result>
+			<result name="register_suc">index.jsp</result>
+			<result name="logout_suc">index.jsp</result>
+		</action>
+		<!-- 收支信息Action -->
+		<action name="tally_*" class="com.cpw.action.TallyAction"
+			method="{1}">
+			<result name="success">web/main.jsp</result>
+		</action>
+		<!-- 报表Action -->
+		<action name="report_*" class="com.cpw.action.ReportAction"
+			method="{1}">
+			<result name="success">web/main.jsp</result>
+		</action>
+		<!-- 分类Action -->
+		<action name="classify_*" class="com.cpw.action.ClassifyAtion"
+			method="{1}">
+			<result name="success">web/main.jsp</result>
+		</action>
+		<!-- 设置Action -->
+		<action name="set_*" class="com.cpw.action.SetAction" method="{1}">
+			<result name="success">web/main.jsp</result>
+		</action>
+	</package>
+	<package name="ajax" extends="json-default">
+		<!-- Ajax请求Action -->
+		<action name="ajax_*" class="com.cpw.action.AjaxAction" method="{1}">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+	</package>
+	<!-- flex相关的请求处理 -->
+	<package name="flex" extends="json-default">
+		<action name="flex_getFirstLevelIncome" class="com.cpw.action.GetLevelIncomeAction">
+			<result type="json" name="success"></result>
+		</action>
+		<action name="flex_getFirstLevelSpending" class="com.cpw.action.GetLevelSpendingAction">
+			<result type="json" name="success"></result>
+		</action>
+		<action name="flex_getMonthPay" class="com.cpw.action.GetTrendAction">
+			<result type="json" name="success"></result>
+		</action>
+		<action name="flex_getMemberMoney" class="com.cpw.action.GetMemberMoney">
+			<result type="json" name="success"></result>
+		</action>
+	</package>
+</struts>
