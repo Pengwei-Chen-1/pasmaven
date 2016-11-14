@@ -1,0 +1,6 @@
+﻿1、必须保证机器上已安装MySql数据库。
+2、打开MySql Command Line Client 命令窗口，在开始菜单的MySql文件夹中。
+3、输入命令：create database mydb;
+4、可用命令查看是否成功创建数据库mydb：show databases;
+4、source pas.sql;
+5、全部OK，完成！
